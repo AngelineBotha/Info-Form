@@ -1,0 +1,67 @@
+<!Doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Info Form</title>
+    <link rel="stylesheet" href="Infoform.css">
+  </head>
+<body>
+  <h1>Do you know what this is?</h1>
+  <h2>It's a form</h2>
+  <p>Fill out your info just to see what happens</p>
+
+  <form id="interestform">
+
+    <label for="first name" id="first-name-label">
+      <p>First Name:</p>
+      <input
+      type="text"
+      name="firstname"
+      placeholder="Ben"
+      required/>
+    </label>
+    <label for="last name" id="last-name-label">
+      <p>Last Name:</p>
+        <input
+        type="text"
+        name="lastname"
+        placeholder="Over"
+        required/>
+   </label>
+   <label for="mobile number" id="mobile-number-label">
+      <p>Mobile Number:</p>
+      <input
+      type="number"
+      name="mobilenumber"
+      placeholder="082 282 5768"
+      required/>
+   </label>
+   <label for="email Address" id="emaillabel">
+      <p>Email Address:</p>
+     <input
+     type="email"
+     name="email"
+     placeholder="example@gmail.com"
+     required/>
+   </label>
+   <p>and now we are done</p>
+   <button type="submit" id="submit">Submit</button>
+   
+  </form>
+</body>
+
+<script>
+  let submitbtn= document.getElementById("submit");
+  let interestform= document.getElementById("interestform");
+  
+
+  let alertfunc= function(){
+    alert("Yay you have finished");
+    
+  }
+  interestform.addEventListener("submit", alertfunc)
+  
+</script>
+
+</html>
+
